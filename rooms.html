@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>房型选择 | 仁达</title>
+    <link rel="stylesheet" href="./styles.css?v=20260803a" />
+  </head>
+  <body class="rooms-site">
+    <header class="site-header">
+      <div class="header-left">
+        <a class="back-link" href="./index.html#reserve" data-room-i18n="back">Back</a>
+      </div>
+      <a class="brand" href="./index.html" aria-label="仁达 home">仁达</a>
+      <div class="header-right">
+        <div class="language-wrap" aria-label="Language">
+          <select id="languageSelect" class="native-language-select" tabindex="-1" aria-hidden="true">
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+            <option value="zhHant">繁體中文</option>
+            <option value="zhHans">简体中文</option>
+            <option value="ko">한국어</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="hi">हिंदी</option>
+          </select>
+          <button class="language-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="language-current">日本語</span>
+          </button>
+          <div class="language-menu" role="listbox" aria-label="Language options">
+            <button type="button" role="option" data-language-option="ja">日本語</button>
+            <button type="button" role="option" data-language-option="en">English</button>
+            <button type="button" role="option" data-language-option="zhHant">繁體中文</button>
+            <button type="button" role="option" data-language-option="zhHans">简体中文</button>
+            <button type="button" role="option" data-language-option="ko">한국어</button>
+            <button type="button" role="option" data-language-option="vi">Tiếng Việt</button>
+            <button type="button" role="option" data-language-option="hi">हिंदी</button>
+          </div>
+        </div>
+        <a class="reserve-button" href="./index.html#reserve" data-room-i18n="changeSearch">Change Search</a>
+      </div>
+    </header>
+
+    <main class="rooms-page">
+      <section class="rooms-hero">
+        <p class="section-kicker" data-room-i18n="kicker">ROOM SELECTION</p>
+        <h1 id="propertyTitle">仁达日本桥</h1>
+        <div class="stay-summary">
+          <span id="checkInSummary"></span>
+          <span id="stayUntilSummary"></span>
+          <span id="checkoutSummary"></span>
+        </div>
+      </section>
+
+      <section class="room-list-section">
+        <div class="section-heading">
+          <p class="section-kicker" data-room-i18n="availableRooms">AVAILABLE ROOMS</p>
+          <h2 data-room-i18n="chooseRoom">选择房型</h2>
+        </div>
+        <div class="room-grid" id="roomGrid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-main">
+        <a class="footer-brand" href="./index.html">仁达</a>
+        <nav aria-label="Footer navigation">
+          <a href="./index.html#reserve" data-room-i18n="footerReserve">Reservation</a>
+          <a href="./index.html#reserve" data-room-i18n="footerProperties">Properties</a>
+          <a href="./guide.html" data-room-i18n="footerGuide">Stay Guide</a>
+          <a href="#contact" data-room-i18n="footerContact">Contact</a>
+        </nav>
+      </div>
+      <div class="contact-panel" aria-label="Contact channels">
+        <p data-room-i18n="contactTitle">聯絡我們</p>
+        <div class="contact-logos">
+          <a href="#" aria-label="LINE">
+            <img class="contact-icon" src="./assets/icons/line.svg" alt="" />
+            <span class="sr-only">LINE</span>
+          </a>
+          <a href="mailto:info@jinda-stay.jp" aria-label="Gmail">
+            <img class="contact-icon contact-icon-wide" src="./assets/icons/gmail.svg" alt="" />
+            <span class="sr-only">Gmail</span>
+          </a>
+          <a href="#" aria-label="WeChat">
+            <img class="contact-icon" src="./assets/icons/wechat.svg" alt="" />
+            <span class="sr-only">WeChat</span>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <img class="contact-icon" src="./assets/icons/whatsapp.svg" alt="" />
+            <span class="sr-only">WhatsApp</span>
+          </a>
+          <a href="tel:+81600000000" aria-label="Phone">
+            <img class="contact-icon" src="./assets/icons/phone.svg" alt="" />
+            <span class="sr-only">Phone</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./hotel-data.js?v=20260803a"></script>
+    <script src="./rooms.js?v=20260803a"></script>
+  </body>
+</html>

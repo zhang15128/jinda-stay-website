@@ -1,0 +1,28 @@
+# Local agent and attachment state
+.agents/
+.codex-remote-attachments/
+.wrangler/
+
+# Dependencies, logs, and environment files
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+
+# Generated deployment bundles
+cloudflare-dist/
+cloudflare-dist-safe-*/
+
+# Sensitive source media: never commit or publish directly
+/assets/properties/namba-south-room-video.mp4
+/assets/properties/namba-south-room-video-poster.jpg
+
+# Separate media-production work stored beside this website
+/episodes/
+/video_edit_preview.py
+/*.mp4
+
+# OS files
+.DS_Store
+Thumbs.db

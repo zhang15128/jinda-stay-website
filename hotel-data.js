@@ -1,0 +1,262 @@
+window.JINDA_DATA = {
+  otaPlatforms: [
+    { id: "booking", name: "Booking.com" },
+    { id: "agoda", name: "Agoda" },
+    {
+      id: "ctrip",
+      name: "Trip.com",
+      names: { ja: "Trip.com", en: "Trip.com", zhHant: "Trip.com（攜程）", zhHans: "Trip.com（携程）", ko: "Trip.com", vi: "Trip.com", hi: "Trip.com" },
+    },
+  ],
+  properties: [
+    {
+      id: "nihonbashi",
+      name: "仁达日本桥",
+      names: {
+        ja: "仁达日本橋",
+        en: "Jinda Nihonbashi",
+        zhHant: "仁达日本橋",
+        zhHans: "仁达日本桥",
+        ko: "仁达 니혼바시",
+        vi: "仁达 Nihonbashi",
+        hi: "仁达 निहोनबाशी",
+      },
+      area: "NIHONBASHI",
+      cardImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Dotonbori,%20Osaka,%20at%20night,%20November%202016.jpg",
+      address: "大阪府大阪市浪速区日本橋4丁目2-15",
+      mapQuery: "Nihonbashi Royal 宿소, 4 Chome-2-15 Nipponbashi, Naniwa Ward, Osaka, 556-0005",
+      mapShareUrl: "https://maps.app.goo.gl/PVoar3Ue2cLoFFwz7",
+      mapCid: "13126929427826673143",
+      guideImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Dotonbori,%20Osaka,%20at%20night,%20November%202016.jpg",
+      videoPoster:
+        "/assets/properties/nihonbashi-room-video-poster.jpg?v=20260731",
+      videoSrc: "/assets/properties/nihonbashi-room-video.mp4?v=20260708",
+      otaLinks: {
+        booking: "https://www.booking.com/searchresults.html?ss=Jinda%20Nihonbashi%20Osaka",
+        agoda: "https://www.agoda.com/search?text=Jinda%20Nihonbashi%20Osaka",
+        ctrip: "https://hotels.ctrip.com/international/search/hotel?keyword=仁达日本桥",
+      },
+      rooms: [
+        {
+          id: "quad",
+          name: "4人间",
+          names: { ja: "4名部屋", en: "4-Person Room", zhHant: "四人房", zhHans: "四人间", ko: "4인실", vi: "Phòng 4 người", hi: "4 अतिथि वाला कमरा" },
+          capacity: 4,
+        },
+        {
+          id: "six",
+          name: "6人间",
+          names: { ja: "6名部屋", en: "6-Person Room", zhHant: "六人房", zhHans: "六人间", ko: "6인실", vi: "Phòng 6 người", hi: "6 अतिथि वाला कमरा" },
+          capacity: 6,
+        },
+        {
+          id: "eight",
+          name: "8人间",
+          names: { ja: "8名部屋", en: "8-Person Room", zhHant: "八人房", zhHans: "八人间", ko: "8인실", vi: "Phòng 8 người", hi: "8 अतिथि वाला कमरा" },
+          capacity: 8,
+        },
+        {
+          id: "ten",
+          name: "10人间",
+          names: { ja: "10名部屋", en: "10-Person Room", zhHant: "十人房", zhHans: "十人间", ko: "10인실", vi: "Phòng 10 người", hi: "10 अतिथि वाला कमरा" },
+          capacity: 10,
+        },
+        {
+          id: "twelve",
+          name: "12人间",
+          names: { ja: "12名部屋", en: "12-Person Room", zhHant: "十二人房", zhHans: "十二人间", ko: "12인실", vi: "Phòng 12 người", hi: "12 अतिथि वाला कमरा" },
+          capacity: 12,
+        },
+      ],
+      facilities: [
+        { name: "Kuromon Market", names: { ja: "黒門市場", en: "Kuromon Market", zhHant: "黑門市場", zhHans: "黑门市场", ko: "쿠로몬 시장", vi: "Chợ Kuromon", hi: "कुरोमोन मार्केट" } },
+        { name: "Dotonbori", names: { ja: "道頓堀", en: "Dotonbori", zhHant: "道頓堀", zhHans: "道顿堀", ko: "도톤보리", vi: "Dotonbori", hi: "डोटोनबोरी" } },
+        { name: "Nipponbashi Station", names: { ja: "日本橋駅", en: "Nipponbashi Station", zhHant: "日本橋站", zhHans: "日本桥站", ko: "닛폰바시역", vi: "Ga Nipponbashi", hi: "निप्पोनबाशी स्टेशन" } },
+        { name: "Convenience store", names: { ja: "コンビニ", en: "Convenience store", zhHant: "便利商店", zhHans: "便利店", ko: "편의점", vi: "Cửa hàng tiện lợi", hi: "कन्वीनियंस स्टोर" } },
+      ],
+      checkinSteps: [
+        "予約確認メッセージを確認",
+        "建物入口でスマートキーを入力",
+        "室内の案内カードでWi-Fiと設備を確認",
+      ],
+    },
+    {
+      id: "namba-south",
+      name: "仁达难波南",
+      names: {
+        ja: "仁达難波南",
+        en: "Jinda Namba South",
+        zhHant: "仁达難波南",
+        zhHans: "仁达难波南",
+        ko: "仁达 난바 남",
+        vi: "仁达 Namba South",
+        hi: "仁达 नाम्बा साउथ",
+      },
+      area: "NAMBA SOUTH",
+      cardImage: "/assets/properties/namba-south-room-1.jpg?v=20260731",
+      address: "大阪府大阪市浪速区戎本町1丁目4",
+      mapQuery:
+        "ROYAL難波南 Studio, 1-chome-4 Ebisuhonmachi, Naniwa Ward, Osaka, 556-0013",
+      mapShareUrl: "https://maps.app.goo.gl/qGPDiqFpCBHZNu2i9",
+      mapCid: "12895864884448441408",
+      guideImage: "/assets/properties/namba-south-room-1.jpg?v=20260708",
+      videoPoster: "",
+      videoSrc: "",
+      entryDemo: true,
+      otaLinks: {
+        booking: "https://www.booking.com/searchresults.html?ss=Jinda%20Namba%20South%20Osaka",
+        agoda: "https://www.agoda.com/search?text=Jinda%20Namba%20South%20Osaka",
+        ctrip: "https://hotels.ctrip.com/international/search/hotel?keyword=仁达难波南",
+      },
+      rooms: [
+        {
+          id: "double",
+          name: "2人间",
+          names: { ja: "2名部屋", en: "2-Person Room", zhHant: "雙人房", zhHans: "双人间", ko: "2인실", vi: "Phòng 2 người", hi: "2 अतिथि वाला कमरा" },
+          capacity: 2,
+        },
+        {
+          id: "quad",
+          name: "4人间",
+          names: { ja: "4名部屋", en: "4-Person Room", zhHant: "四人房", zhHans: "四人间", ko: "4인실", vi: "Phòng 4 người", hi: "4 अतिथि वाला कमरा" },
+          capacity: 4,
+        },
+      ],
+      facilities: [
+        { name: "Namba Station", names: { ja: "なんば駅", en: "Namba Station", zhHant: "難波站", zhHans: "难波站", ko: "난바역", vi: "Ga Namba", hi: "नाम्बा स्टेशन" } },
+        { name: "Namba Parks", names: { ja: "なんばパークス", en: "Namba Parks", zhHant: "難波 Parks", zhHans: "难波 Parks", ko: "난바 파크스", vi: "Namba Parks", hi: "नाम्बा पार्क्स" } },
+        { name: "Dotonbori", names: { ja: "道頓堀", en: "Dotonbori", zhHant: "道頓堀", zhHans: "道顿堀", ko: "도톤보리", vi: "Dotonbori", hi: "डोटोनबोरी" } },
+        { name: "Drugstore", names: { ja: "ドラッグストア", en: "Drugstore", zhHant: "藥妝店", zhHans: "药妆店", ko: "드럭스토어", vi: "Hiệu thuốc", hi: "ड्रगस्टोर" } },
+      ],
+      checkinSteps: [
+        "予約者名と暗証番号を確認",
+        "エントランスの案内に沿って入室",
+        "退室前に忘れ物とゴミ分別を確認",
+      ],
+    },
+    {
+      id: "eihonmachi",
+      name: "仁达荣本町",
+      names: {
+        ja: "仁达榮本町",
+        en: "Jinda Eihonmachi",
+        zhHant: "仁达榮本町",
+        zhHans: "仁达荣本町",
+        ko: "仁达 에이혼마치",
+        vi: "仁达 Eihonmachi",
+        hi: "仁达 एइहोनमाची",
+      },
+      area: "EIHONMACHI",
+      cardImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/022%20Osaka,%20Japan%20-%20city%20view%20of%20Osaka%20from%20Umeda%20Sky%20Building%20in%20Osaka,%20Japan.jpg",
+      address: "大阪府大阪市浪速区戎本町1丁目3",
+      mapQuery:
+        "Grand Pacific 戎本町 One-Bedroom Apartment, 1-chome-3 Ebisuhonmachi, Naniwa Ward, Osaka, 556-0013",
+      mapShareUrl: "https://maps.app.goo.gl/RupzwnshMbJbHUoy5",
+      mapCid: "9768704130959395334",
+      guideImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/022%20Osaka,%20Japan%20-%20city%20view%20of%20Osaka%20from%20Umeda%20Sky%20Building%20in%20Osaka,%20Japan.jpg",
+      videoPoster:
+        "https://www.goodfreephotos.com/albums/japan/osaka/osaka-castle-japan.jpg",
+      otaLinks: {
+        booking: "https://www.booking.com/searchresults.html?ss=Jinda%20Eihonmachi%20Osaka",
+        agoda: "https://www.agoda.com/search?text=Jinda%20Eihonmachi%20Osaka",
+        ctrip: "https://hotels.ctrip.com/international/search/hotel?keyword=仁达荣本町",
+      },
+      rooms: [
+        {
+          id: "single",
+          name: "单人间",
+          names: { ja: "シングルルーム", en: "Single Room", zhHant: "單人房", zhHans: "单人间", ko: "싱글룸", vi: "Phòng đơn", hi: "सिंगल रूम" },
+          capacity: 1,
+        },
+        {
+          id: "queen",
+          name: "大床间",
+          names: { ja: "クイーンルーム", en: "Queen Room", zhHant: "大床房", zhHans: "大床间", ko: "퀸룸", vi: "Phòng giường Queen", hi: "क्वीन रूम" },
+          capacity: 2,
+        },
+        {
+          id: "twin",
+          name: "双单人床标准房",
+          names: {
+            ja: "スタンダードツインルーム",
+            en: "Standard Twin Room",
+            zhHant: "標準雙床房",
+            zhHans: "双单人床标准房",
+            ko: "스탠다드 트윈룸",
+            vi: "Phòng Twin tiêu chuẩn",
+            hi: "स्टैंडर्ड ट्विन रूम",
+          },
+          capacity: 2,
+        },
+      ],
+      facilities: [
+        { name: "Honmachi Station", names: { ja: "本町駅", en: "Honmachi Station", zhHant: "本町站", zhHans: "本町站", ko: "혼마치역", vi: "Ga Honmachi", hi: "होनमाची स्टेशन" } },
+        { name: "Office area", names: { ja: "ビジネス街", en: "Office area", zhHant: "商務區", zhHans: "商务区", ko: "업무 지구", vi: "Khu văn phòng", hi: "व्यावसायिक क्षेत्र" } },
+        { name: "Cafe street", names: { ja: "カフェ通り", en: "Cafe street", zhHant: "咖啡街區", zhHans: "咖啡街区", ko: "카페 거리", vi: "Phố cà phê", hi: "कैफ़े स्ट्रीट" } },
+        { name: "Supermarket", names: { ja: "スーパーマーケット", en: "Supermarket", zhHant: "超級市場", zhHans: "超级市场", ko: "슈퍼마켓", vi: "Siêu thị", hi: "सुपरमार्केट" } },
+      ],
+      checkinSteps: [
+        "事前メールの部屋番号を確認",
+        "エレベーターで指定階へ移動",
+        "室内ガイドでキッチンと洗濯機を確認",
+      ],
+    },
+    {
+      id: "hotel",
+      name: "仁达hotel",
+      names: {
+        ja: "仁达hotel",
+        en: "Jinda Hotel",
+        zhHant: "仁达hotel",
+        zhHans: "仁达hotel",
+        ko: "仁达 hotel",
+        vi: "仁达 Hotel",
+        hi: "仁达 होटल",
+      },
+      area: "HOTEL",
+      cardImage: "https://www.goodfreephotos.com/albums/japan/osaka/osaka-castle-japan.jpg",
+      address: "大阪市中央区谷町 4-1-1",
+      mapQuery: "Tanimachi Osaka Japan",
+      guideImage:
+        "https://www.goodfreephotos.com/albums/japan/osaka/osaka-castle-japan.jpg",
+      videoPoster:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/022%20Osaka,%20Japan%20-%20city%20view%20of%20Osaka%20from%20Umeda%20Sky%20Building%20in%20Osaka,%20Japan.jpg",
+      otaLinks: {
+        booking: "https://www.booking.com/searchresults.html?ss=Jinda%20Hotel%20Osaka",
+        agoda: "https://www.agoda.com/search?text=Jinda%20Hotel%20Osaka",
+        ctrip: "https://hotels.ctrip.com/international/search/hotel?keyword=仁达hotel",
+      },
+      rooms: [
+        {
+          id: "standard-queen",
+          name: "标准间 大床",
+          names: {
+            ja: "スタンダードクイーンルーム",
+            en: "Standard Queen Room",
+            zhHant: "標準大床房",
+            zhHans: "标准大床房",
+            ko: "스탠다드 퀸룸",
+            vi: "Phòng Queen tiêu chuẩn",
+            hi: "स्टैंडर्ड क्वीन रूम",
+          },
+          capacity: 2,
+        },
+      ],
+      facilities: [
+        { name: "Osaka Castle", names: { ja: "大阪城", en: "Osaka Castle", zhHant: "大阪城", zhHans: "大阪城", ko: "오사카성", vi: "Lâu đài Osaka", hi: "ओसाका कैसल" } },
+        { name: "Tanimachi Station", names: { ja: "谷町駅", en: "Tanimachi Station", zhHant: "谷町站", zhHans: "谷町站", ko: "다니마치역", vi: "Ga Tanimachi", hi: "तानिमाची स्टेशन" } },
+        { name: "Convenience store", names: { ja: "コンビニ", en: "Convenience store", zhHant: "便利商店", zhHans: "便利店", ko: "편의점", vi: "Cửa hàng tiện lợi", hi: "कन्वीनियंस स्टोर" } },
+        { name: "Coin laundry", names: { ja: "コインランドリー", en: "Coin laundry", zhHant: "自助洗衣店", zhHans: "自助洗衣店", ko: "코인 세탁실", vi: "Tiệm giặt tự động", hi: "कॉइन लॉन्ड्री" } },
+      ],
+      checkinSteps: [
+        "フロントまたはセルフ端末で予約確認",
+        "カードキーを受け取り客室へ移動",
+        "チェックアウトは10:00までにカード返却",
+      ],
+    },
+  ],
+};
