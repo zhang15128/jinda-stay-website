@@ -517,6 +517,30 @@ html[lang="hi"] .room-card h3 {
   font-weight: 580;
 }
 
+html[lang="zh-CN"] {
+  font-family:
+    "Noto Sans SC", "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC",
+    "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+}
+
+html[lang="zh-CN"] .drawer-nav a,
+html[lang="zh-CN"] .hero-copy h1,
+html[lang="zh-CN"] .intro-section h2,
+html[lang="zh-CN"] .property-entry-head h2,
+html[lang="zh-CN"] .service-copy h2,
+html[lang="zh-CN"] .guide-hero h1,
+html[lang="zh-CN"] .guide-panel h2,
+html[lang="zh-CN"] .rooms-hero h1,
+html[lang="zh-CN"] .section-heading h2,
+html[lang="zh-CN"] .room-card h3,
+html[lang="zh-CN"] .property-entry-copy strong,
+html[lang="zh-CN"] .service-list strong {
+  font-family:
+    "Noto Sans SC", "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC",
+    "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
+}
+
 .hero-copy h1 {
   max-width: 640px;
   font-size: 68px;
