@@ -107,6 +107,22 @@
 - 安全边界：发布包未包含用户提供的原始参考视频、真实信箱组合数字或未跟踪的媒体制作目录。
 - 验证结果：Cloudflare 部署列表显示来源提交为 `b48ee37`，环境为 `Production / main`；生产页面与 `styles.css?v=20260821d` 返回 HTTP 200；公网 390px 手机视口中左右方向标均与数字转轮边界完全分离，无脚本错误或横向溢出。
 
+## 2026-08-21 | Cloudflare 仁达系统院物件部署
+
+- 发布平台：Cloudflare Pages
+- 项目：`jinda-stay-demo`
+- 部署环境：Production / `main`
+- Cloudflare 部署 ID：`1e580888-f096-44f9-9352-a02154986de8`
+- 部署预览地址：<https://1e580888.jinda-stay-demo.pages.dev>
+- 生产访问地址：<https://jinda-stay-demo.pages.dev/guide.html?property=systemin&lang=zhHans&release=20260821e>
+- 发布包：`cloudflare-dist-safe-20260821e`
+- 本次资源版本：`v=20260821e`
+- 对应 Git 提交：`079540b`（新增仁达系统院物件）
+- 发布内容：新增第五个物件仁达系统院、精确 Google Maps 地点、区域占位图片、七语言名称与说明，并复用荣本町信箱取钥匙动画。
+- 待补充内容：系统院房型、正式 OTA 房源链接、实拍图片和房内视频均未虚构，网页以准备中状态显示。
+- 安全边界：发布包未包含真实门禁密码、用户提供的原始参考视频、客户资料或未跟踪的媒体制作目录。
+- 验证结果：部署列表显示来源提交为 `079540b`，环境为 `Production / main`；生产首页、指南页和 `hotel-data.js?v=20260821e` 返回 HTTP 200；公网 390px 手机视口显示五个物件、固定地图和系统院信箱演示，无脚本错误或横向溢出。
+
 ### 记录边界
 
 - `index.html` 直接访问时由当前站点重定向到 `/`，这是本次观测到的 Cloudflare 路由行为。
