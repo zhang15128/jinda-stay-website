@@ -92,6 +92,21 @@
 - 安全边界：发布包未包含用户提供的原始参考视频、真实信箱组合数字或未跟踪的媒体制作目录。
 - 验证结果：Cloudflare 部署列表显示来源提交为 `2b56867`，环境为 `Production / main`；生产指南页、`styles.css?v=20260821c` 和 `guide.js?v=20260821c` 均返回 HTTP 200；公网 390px 手机视口完成左转、右转、淡出和开箱状态，无脚本错误或横向溢出。
 
+## 2026-08-21 | Cloudflare 信箱方向标位置修正版部署
+
+- 发布平台：Cloudflare Pages
+- 项目：`jinda-stay-demo`
+- 部署环境：Production / `main`
+- Cloudflare 部署 ID：`7b49970a-41f9-4147-b80a-36e56b2be334`
+- 部署预览地址：<https://7b49970a.jinda-stay-demo.pages.dev>
+- 生产访问地址：<https://jinda-stay-demo.pages.dev/guide.html?property=eihonmachi&lang=zhHans&release=20260821d>
+- 发布包：`cloudflare-dist-safe-20260821d`
+- 本次资源版本：`v=20260821d`
+- 对应 Git 提交：`b48ee37`（重做信箱方向标位置）
+- 发布内容：移除覆盖数字盘的大型箭头，将左转和右转方向标分别放到转轮外侧，并同步下方状态图标颜色。
+- 安全边界：发布包未包含用户提供的原始参考视频、真实信箱组合数字或未跟踪的媒体制作目录。
+- 验证结果：Cloudflare 部署列表显示来源提交为 `b48ee37`，环境为 `Production / main`；生产页面与 `styles.css?v=20260821d` 返回 HTTP 200；公网 390px 手机视口中左右方向标均与数字转轮边界完全分离，无脚本错误或横向溢出。
+
 ### 记录边界
 
 - `index.html` 直接访问时由当前站点重定向到 `/`，这是本次观测到的 Cloudflare 路由行为。
