@@ -469,6 +469,7 @@ const demoMailboxCount = document.querySelector("#demoMailboxCount");
 const demoMailboxStatus = document.querySelector("#demoMailboxStatus");
 const demoMailboxDial = document.querySelector("#demoMailboxDial");
 const demoMailboxTarget = document.querySelector("#demoMailboxTarget");
+const demoMailboxRotationGuide = document.querySelector("#demoMailboxRotationGuide");
 const lobbyScreen = document.querySelector(".lobby-screen");
 const lobbyDoor = document.querySelector(".lobby-door");
 const roomWakeBar = document.querySelector(".room-wake-bar");
@@ -706,6 +707,7 @@ function playEntryDemo() {
   if (activeDemoMode === "mailbox") {
     schedule(260, () => {
       demoMailboxStatus.classList.add("is-turning-left");
+      demoMailboxRotationGuide.classList.add("is-turning-left");
       demoMailboxArrow.textContent = "↺";
       demoMailboxPhase.textContent = dictionary.mailboxTurnLeft;
       rotateMailboxDial(-144, 900);
@@ -722,6 +724,8 @@ function playEntryDemo() {
     schedule(3300, () => {
       demoMailboxStatus.classList.remove("is-turning-left");
       demoMailboxStatus.classList.add("is-turning-right");
+      demoMailboxRotationGuide.classList.remove("is-turning-left");
+      demoMailboxRotationGuide.classList.add("is-turning-right");
       demoMailboxArrow.textContent = "↻";
       demoMailboxCount.textContent = "0 / 1";
       demoMailboxPhase.textContent = dictionary.mailboxTurnRight;
@@ -730,6 +734,8 @@ function playEntryDemo() {
     schedule(4820, () => {
       demoMailboxCount.textContent = "1 / 1";
       pulseMailboxAlignment();
+      demoMailboxRotationGuide.classList.remove("is-turning-right");
+      demoMailboxRotationGuide.classList.add("is-complete");
       demoMailboxTarget.classList.add("is-unlocked");
     });
     schedule(5280, () => {
@@ -781,6 +787,7 @@ function resetDemoVisuals() {
   roomHandle.classList.remove("is-down");
   demoMailboxTarget.classList.remove("is-unlocked", "is-open");
   demoMailboxStatus.classList.remove("is-turning-left", "is-turning-right", "is-aligned");
+  demoMailboxRotationGuide.classList.remove("is-turning-left", "is-turning-right", "is-complete");
   demoMailboxArrow.textContent = "↺";
   demoMailboxCount.textContent = "0 / 2";
   demoMailboxDial.style.transitionDuration = "0ms";
