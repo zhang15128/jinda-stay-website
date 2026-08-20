@@ -77,6 +77,21 @@
 - 安全边界：发布包未包含用户提供的原始参考视频、真实信箱组合数字或未跟踪的媒体制作目录。
 - 验证结果：Cloudflare 部署列表显示来源提交为 `6e04e40`，环境为 `Production / main`；生产指南页、`styles.css?v=20260821b` 和 `guide.js?v=20260821b` 均返回 HTTP 200；公网 390px 手机视口无脚本错误、文字遮挡或横向溢出。
 
+## 2026-08-21 | Cloudflare 信箱旋钮方向动画部署
+
+- 发布平台：Cloudflare Pages
+- 项目：`jinda-stay-demo`
+- 部署环境：Production / `main`
+- Cloudflare 部署 ID：`2b0109d7-501e-42b3-a55b-7189cb85063e`
+- 部署预览地址：<https://2b0109d7.jinda-stay-demo.pages.dev>
+- 生产访问地址：<https://jinda-stay-demo.pages.dev/guide.html?property=eihonmachi&lang=zhHans&release=20260821c>
+- 发布包：`cloudflare-dist-safe-20260821c`
+- 本次资源版本：`v=20260821c`
+- 对应 Git 提交：`2b56867`（增加信箱旋钮方向动画）
+- 发布内容：信箱旋钮左转时显示绿色逆时针箭头，右转时切换为暖金色顺时针箭头，解锁前自动淡出。
+- 安全边界：发布包未包含用户提供的原始参考视频、真实信箱组合数字或未跟踪的媒体制作目录。
+- 验证结果：Cloudflare 部署列表显示来源提交为 `2b56867`，环境为 `Production / main`；生产指南页、`styles.css?v=20260821c` 和 `guide.js?v=20260821c` 均返回 HTTP 200；公网 390px 手机视口完成左转、右转、淡出和开箱状态，无脚本错误或横向溢出。
+
 ### 记录边界
 
 - `index.html` 直接访问时由当前站点重定向到 `/`，这是本次观测到的 Cloudflare 路由行为。
