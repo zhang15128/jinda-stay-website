@@ -43,6 +43,17 @@ const guideTranslations = {
     demoCorrection: "入力を間違えた場合は C で最後の1桁を削除します。",
     lobbyDemoSteps: ["画面に触れて点灯", "緑色の「呼出」をタッチ", "サンプル番号 1234 を入力すると自動で開きます"],
     roomDemoSteps: ["長いボタンを2回押し、表示されたランダムな文字をすべてタッチ", "入力欄がリセットされたらサンプル番号 1234 を入力", "Eで確定し、解錠音の後にハンドルを引く"],
+    mailboxDemoKicker: "MAILBOX KEY",
+    mailboxDemoTitle: "郵便受けから鍵を取り出すデモ",
+    mailboxDemoLead: "栄本町のダイヤル式郵便受けを、サンプル番号で開ける手順を確認できます。",
+    demoMailbox: "郵便受け",
+    mailboxSampleLabel: "サンプルの回し方",
+    mailboxSample: "左へ2回「4」→ 右へ1回「7」",
+    mailboxPrivacy: "実際の組み合わせ番号は宿泊前に個別でお知らせします。",
+    mailboxTurnLeft: "左へ回し、「4」を2回合わせます",
+    mailboxTurnRight: "右へ回し、「7」を1回合わせます",
+    mailboxUnlocked: "解錠しました。つまみを引いて鍵を取り出します",
+    mailboxDemoSteps: ["左へ回し、基準線にサンプル番号「4」を2回合わせる", "次に右へ回し、基準線に「7」を1回合わせる", "ロックが外れたら、つまみを手前に引いて鍵を取り出す"],
     genericSteps: [
       "チェックイン前の情報と住所を確認",
       "建物入口のQR code案内に従い、宿泊者情報を入力して入室",
@@ -93,6 +104,17 @@ const guideTranslations = {
     demoCorrection: "Made a mistake? Press C to delete the last digit.",
     lobbyDemoSteps: ["Touch the screen to wake it", "Tap the green call button", "Enter sample code 1234; the door opens automatically"],
     roomDemoSteps: ["Press the long button twice, then tap every random character", "When the field resets, enter sample code 1234", "Press E, wait for the unlock click, then pull the handle"],
+    mailboxDemoKicker: "MAILBOX KEY",
+    mailboxDemoTitle: "Mailbox key retrieval demo",
+    mailboxDemoLead: "See how to open the Eihonmachi dial mailbox and retrieve the key using a sample combination.",
+    demoMailbox: "Mailbox key",
+    mailboxSampleLabel: "Sample combination",
+    mailboxSample: "Left ×2 to 4 → Right ×1 to 7",
+    mailboxPrivacy: "Your actual mailbox combination is shared privately before arrival.",
+    mailboxTurnLeft: "Turn left and align 4 twice",
+    mailboxTurnRight: "Turn right and align 7 once",
+    mailboxUnlocked: "Unlocked. Pull the knob and retrieve the key",
+    mailboxDemoSteps: ["Turn left and align sample number 4 with the index line twice", "Then turn right and align number 7 with the index line once", "When the lock releases, pull the knob toward you and retrieve the key"],
     genericSteps: [
       "Confirm the pre-arrival information and address",
       "Follow the QR code guide at the building entrance, fill in the stay information, and enter the room",
@@ -143,6 +165,17 @@ const guideTranslations = {
     demoCorrection: "輸入錯誤時，按 C 刪除最後一位。",
     lobbyDemoSteps: ["輕觸螢幕使其亮起", "點按綠色的「呼出」", "輸入示例密碼 1234，門會自動開啟"],
     roomDemoSteps: ["按兩下長條形按鈕，再把隨機字元全部按完", "欄位復位後輸入示例密碼 1234", "按 E 確認，聽到解鎖聲後拉下把手"],
+    mailboxDemoKicker: "信箱鑰匙",
+    mailboxDemoTitle: "信箱取鑰匙操作示範",
+    mailboxDemoLead: "使用虛擬示例數字，查看榮本町旋鈕式信箱的開啟與取鑰匙方式。",
+    demoMailbox: "信箱取鑰匙",
+    mailboxSampleLabel: "示例轉法",
+    mailboxSample: "向左 ×2 至 4 → 向右 ×1 至 7",
+    mailboxPrivacy: "真實信箱組合數字只會在入住前單獨提供。",
+    mailboxTurnLeft: "向左旋轉，對準 4 兩次",
+    mailboxTurnRight: "向右旋轉，對準 7 一次",
+    mailboxUnlocked: "已解鎖，向外拉動旋鈕並取出鑰匙",
+    mailboxDemoSteps: ["向左旋轉，使示例數字「4」經過基準線並在第二次對準時停下", "接著向右旋轉，使「7」第一次對準基準線時停下", "解鎖後，將旋鈕往自己的方向拉開並取出鑰匙"],
     genericSteps: [
       "確認入住前資訊與地址",
       "依照大樓門口的二維碼指引，填寫居住資訊並進入房間",
@@ -193,6 +226,17 @@ const guideTranslations = {
     demoCorrection: "输入错误时，按 C 删除最后一位。",
     lobbyDemoSteps: ["轻触屏幕使其亮起", "点按绿色的“呼出”", "输入示例密码 1234，门会自动开启"],
     roomDemoSteps: ["按两下长条形按钮，再把随机字符全部按完", "栏位复位后输入示例密码 1234", "按 E 确认，听到解锁声后拉下把手"],
+    mailboxDemoKicker: "信箱钥匙",
+    mailboxDemoTitle: "信箱取钥匙操作演示",
+    mailboxDemoLead: "使用虚拟示例数字，查看荣本町旋钮式信箱的开启与取钥匙方式。",
+    demoMailbox: "信箱取钥匙",
+    mailboxSampleLabel: "示例转法",
+    mailboxSample: "向左 ×2 至 4 → 向右 ×1 至 7",
+    mailboxPrivacy: "真实信箱组合数字只会在入住前单独提供。",
+    mailboxTurnLeft: "向左旋转，对准 4 两次",
+    mailboxTurnRight: "向右旋转，对准 7 一次",
+    mailboxUnlocked: "已解锁，向外拉动旋钮并取出钥匙",
+    mailboxDemoSteps: ["向左旋转，使示例数字“4”经过基准线并在第二次对准时停下", "接着向右旋转，使“7”第一次对准基准线时停下", "解锁后，将旋钮往自己的方向拉开并取出钥匙"],
     genericSteps: [
       "确认入住前信息与地址",
       "依照大楼门口的二维码指引，填写居住信息并进入房间",
@@ -243,6 +287,17 @@ const guideTranslations = {
     demoCorrection: "잘못 입력했다면 C를 눌러 마지막 숫자를 지웁니다.",
     lobbyDemoSteps: ["화면을 터치해 켜기", "초록색 호출 버튼 누르기", "예시 비밀번호 1234 입력 후 문이 자동으로 열림"],
     roomDemoSteps: ["긴 버튼을 두 번 누른 뒤 표시된 무작위 문자를 모두 누르기", "입력란이 초기화되면 예시 비밀번호 1234 입력", "E를 눌러 확인하고 잠금 해제음 후 손잡이 내리기"],
+    mailboxDemoKicker: "우편함 열쇠",
+    mailboxDemoTitle: "우편함 열쇠 꺼내기 시연",
+    mailboxDemoLead: "예시 번호를 사용해 에이혼마치 다이얼 우편함을 열고 열쇠를 꺼내는 방법을 확인하세요.",
+    demoMailbox: "우편함 열쇠",
+    mailboxSampleLabel: "예시 조합",
+    mailboxSample: "왼쪽 ×2, 4 → 오른쪽 ×1, 7",
+    mailboxPrivacy: "실제 우편함 번호 조합은 체크인 전에 개별 안내됩니다.",
+    mailboxTurnLeft: "왼쪽으로 돌려 4를 두 번 맞춥니다",
+    mailboxTurnRight: "오른쪽으로 돌려 7을 한 번 맞춥니다",
+    mailboxUnlocked: "잠금 해제. 손잡이를 당겨 열쇠를 꺼냅니다",
+    mailboxDemoSteps: ["왼쪽으로 돌려 기준선에 예시 번호 4를 두 번 맞춥니다", "다음에는 오른쪽으로 돌려 기준선에 7을 한 번 맞춥니다", "잠금이 풀리면 손잡이를 앞으로 당겨 열쇠를 꺼냅니다"],
     genericSteps: [
       "체크인 전 안내 정보와 주소를 확인",
       "건물 입구의 QR 코드 안내에 따라 숙박 정보를 입력하고 객실에 입실",
@@ -293,6 +348,17 @@ const guideTranslations = {
     demoCorrection: "Nhập sai? Nhấn C để xóa chữ số cuối cùng.",
     lobbyDemoSteps: ["Chạm vào màn hình để bật", "Chạm nút gọi màu xanh", "Nhập mã minh họa 1234; cửa sẽ tự động mở"],
     roomDemoSteps: ["Nhấn nút dài hai lần rồi chạm hết ký tự ngẫu nhiên", "Khi ô nhập được đặt lại, nhập mã minh họa 1234", "Nhấn E, chờ tiếng mở khóa rồi kéo tay nắm"],
+    mailboxDemoKicker: "CHÌA KHÓA HỘP THƯ",
+    mailboxDemoTitle: "Mô phỏng lấy chìa khóa từ hộp thư",
+    mailboxDemoLead: "Xem cách mở hộp thư núm xoay tại Eihonmachi và lấy chìa khóa bằng tổ hợp minh họa.",
+    demoMailbox: "Chìa khóa hộp thư",
+    mailboxSampleLabel: "Tổ hợp minh họa",
+    mailboxSample: "Trái ×2 đến 4 → Phải ×1 đến 7",
+    mailboxPrivacy: "Tổ hợp hộp thư thật chỉ được gửi riêng trước khi bạn đến.",
+    mailboxTurnLeft: "Xoay sang trái, căn số 4 hai lần",
+    mailboxTurnRight: "Xoay sang phải, căn số 7 một lần",
+    mailboxUnlocked: "Đã mở khóa. Kéo núm và lấy chìa khóa",
+    mailboxDemoSteps: ["Xoay sang trái và căn số minh họa 4 với vạch chuẩn hai lần", "Sau đó xoay sang phải và căn số 7 với vạch chuẩn một lần", "Khi khóa mở, kéo núm về phía bạn và lấy chìa khóa"],
     genericSteps: [
       "Xác nhận thông tin trước khi đến và địa chỉ",
       "Làm theo hướng dẫn mã QR tại lối vào tòa nhà, điền thông tin lưu trú và vào phòng",
@@ -343,6 +409,17 @@ const guideTranslations = {
     demoCorrection: "गलत इनपुट हो जाए तो आखिरी अंक मिटाने के लिए C दबाएँ।",
     lobbyDemoSteps: ["स्क्रीन छूकर चालू करें", "हरे कॉल बटन को दबाएँ", "उदाहरण कोड 1234 डालें; दरवाज़ा अपने आप खुलेगा"],
     roomDemoSteps: ["लंबे बटन को दो बार दबाएँ, फिर दिखने वाले सभी यादृच्छिक अक्षर दबाएँ", "फ़ील्ड रीसेट होने पर उदाहरण कोड 1234 डालें", "E दबाएँ, अनलॉक ध्वनि के बाद हैंडल खींचें"],
+    mailboxDemoKicker: "मेलबॉक्स की चाबी",
+    mailboxDemoTitle: "मेलबॉक्स से चाबी निकालने का डेमो",
+    mailboxDemoLead: "उदाहरण संयोजन से एइहोनमाची का डायल मेलबॉक्स खोलना और चाबी निकालना देखें।",
+    demoMailbox: "मेलबॉक्स की चाबी",
+    mailboxSampleLabel: "उदाहरण संयोजन",
+    mailboxSample: "बाएँ ×2 से 4 → दाएँ ×1 से 7",
+    mailboxPrivacy: "मेलबॉक्स का वास्तविक संयोजन आने से पहले निजी रूप से भेजा जाएगा।",
+    mailboxTurnLeft: "बाएँ घुमाएँ और 4 को दो बार मिलाएँ",
+    mailboxTurnRight: "दाएँ घुमाएँ और 7 को एक बार मिलाएँ",
+    mailboxUnlocked: "लॉक खुल गया। नॉब खींचकर चाबी निकालें",
+    mailboxDemoSteps: ["बाएँ घुमाकर उदाहरण संख्या 4 को निशान से दो बार मिलाएँ", "फिर दाएँ घुमाकर संख्या 7 को निशान से एक बार मिलाएँ", "लॉक खुलने पर नॉब को अपनी ओर खींचें और चाबी निकालें"],
     genericSteps: [
       "आने से पहले दी गई जानकारी और पता जाँचें",
       "भवन के प्रवेश द्वार पर QR कोड निर्देशों का पालन करें, ठहरने की जानकारी भरें और कमरे में प्रवेश करें",
@@ -370,15 +447,26 @@ const guideSteps = document.querySelector("#guideSteps");
 const nearbyList = document.querySelector("#nearbyList");
 const entryDemoSection = document.querySelector("#entryDemoSection");
 const entryDemoStage = document.querySelector("#entryDemoStage");
+const entryDemoKickerNode = document.querySelector("#entryDemoKicker");
+const entryDemoTitleNode = document.querySelector("#entryDemoTitle");
+const entryDemoLeadNode = document.querySelector("#entryDemoLead");
 const demoModeSwitch = document.querySelector("#demoModeSwitch");
 const demoModeButtons = [...document.querySelectorAll("[data-demo-mode]")];
 const demoScenes = [...document.querySelectorAll("[data-demo-scene]")];
 const demoStepList = document.querySelector("#demoStepList");
 const demoReplay = document.querySelector("#demoReplay");
+const demoSampleLabel = document.querySelector("#demoSampleLabel");
 const demoSampleCode = document.querySelector("#demoSampleCode");
 const demoCorrection = document.querySelector("#demoCorrection");
+const demoPrivacyText = document.querySelector("#demoPrivacyText");
 const demoLobbyPhase = document.querySelector("#demoLobbyPhase");
 const demoRoomPhase = document.querySelector("#demoRoomPhase");
+const demoMailboxPhase = document.querySelector("#demoMailboxPhase");
+const demoMailboxArrow = document.querySelector("#demoMailboxArrow");
+const demoMailboxCount = document.querySelector("#demoMailboxCount");
+const demoMailboxStatus = document.querySelector("#demoMailboxStatus");
+const demoMailboxDial = document.querySelector("#demoMailboxDial");
+const demoMailboxTarget = document.querySelector("#demoMailboxTarget");
 const lobbyScreen = document.querySelector(".lobby-screen");
 const lobbyDoor = document.querySelector(".lobby-door");
 const roomWakeBar = document.querySelector(".room-wake-bar");
@@ -506,7 +594,8 @@ function renderGuide(language) {
 }
 
 function renderEntryDemo(dictionary) {
-  const isAvailable = Boolean(activeProperty.entryDemo);
+  const availableModes = Array.isArray(activeProperty.entryDemoModes) ? activeProperty.entryDemoModes : [];
+  const isAvailable = availableModes.length > 0;
   entryDemoSection.hidden = !isAvailable;
 
   if (!isAvailable) {
@@ -514,22 +603,41 @@ function renderEntryDemo(dictionary) {
     return;
   }
 
-  demoModeSwitch.setAttribute("aria-label", dictionary.entryDemoTitle);
+  if (!availableModes.includes(activeDemoMode)) {
+    [activeDemoMode] = availableModes;
+  }
+
+  const isMailboxDemo = activeDemoMode === "mailbox";
+  entryDemoSection.classList.toggle("is-mailbox-demo", isMailboxDemo);
+  entryDemoKickerNode.textContent = isMailboxDemo ? dictionary.mailboxDemoKicker : dictionary.entryDemoKicker;
+  entryDemoTitleNode.textContent = isMailboxDemo ? dictionary.mailboxDemoTitle : dictionary.entryDemoTitle;
+  entryDemoLeadNode.textContent = isMailboxDemo ? dictionary.mailboxDemoLead : dictionary.entryDemoLead;
+  demoModeSwitch.hidden = availableModes.length < 2;
+  demoModeSwitch.setAttribute("aria-label", isMailboxDemo ? dictionary.mailboxDemoTitle : dictionary.entryDemoTitle);
 
   demoModeButtons.forEach((button) => {
-    const isActive = button.dataset.demoMode === activeDemoMode;
+    const isModeAvailable = availableModes.includes(button.dataset.demoMode);
+    const isActive = isModeAvailable && button.dataset.demoMode === activeDemoMode;
+    button.hidden = !isModeAvailable;
     button.setAttribute("aria-selected", String(isActive));
     button.tabIndex = isActive ? 0 : -1;
   });
   demoScenes.forEach((scene) => {
-    scene.hidden = scene.dataset.demoScene !== activeDemoMode;
+    scene.hidden = !availableModes.includes(scene.dataset.demoScene) || scene.dataset.demoScene !== activeDemoMode;
   });
-  demoSampleCode.textContent = "1234";
+  demoSampleLabel.textContent = isMailboxDemo ? dictionary.mailboxSampleLabel : dictionary.demoSampleLabel;
+  demoSampleCode.textContent = isMailboxDemo ? dictionary.mailboxSample : "1234";
+  demoPrivacyText.textContent = isMailboxDemo ? dictionary.mailboxPrivacy : dictionary.demoPrivacy;
   demoCorrection.hidden = activeDemoMode !== "room";
   roomWakeBar.textContent = dictionary.demoRoomWakeBar;
 
   demoStepList.innerHTML = "";
-  const steps = activeDemoMode === "lobby" ? dictionary.lobbyDemoSteps : dictionary.roomDemoSteps;
+  const steps =
+    activeDemoMode === "lobby"
+      ? dictionary.lobbyDemoSteps
+      : activeDemoMode === "mailbox"
+        ? dictionary.mailboxDemoSteps
+        : dictionary.roomDemoSteps;
   steps.forEach((step) => {
     const item = document.createElement("li");
     item.textContent = step;
@@ -540,7 +648,8 @@ function renderEntryDemo(dictionary) {
 }
 
 function setDemoMode(mode) {
-  if (!demoScenes.some((scene) => scene.dataset.demoScene === mode)) {
+  const availableModes = Array.isArray(activeProperty.entryDemoModes) ? activeProperty.entryDemoModes : [];
+  if (!availableModes.includes(mode)) {
     return;
   }
 
@@ -560,6 +669,7 @@ function playEntryDemo() {
   const dictionary = guideTranslations[languageSelect.value] || guideTranslations.ja;
   demoLobbyPhase.textContent = dictionary.demoLobbyTouch;
   demoRoomPhase.textContent = dictionary.demoRoomWake;
+  demoMailboxPhase.textContent = dictionary.mailboxTurnLeft;
 
   const schedule = (delay, callback) => {
     demoTimers.push(window.setTimeout(callback, delay));
@@ -584,6 +694,43 @@ function playEntryDemo() {
       demoLobbyPhase.textContent = dictionary.demoLobbyOpen;
       demoUnlockLights[0].classList.add("is-unlocked");
       lobbyDoor.classList.add("is-open");
+      entryDemoStage.classList.add("is-complete");
+    });
+    return;
+  }
+
+  if (activeDemoMode === "mailbox") {
+    schedule(260, () => {
+      demoMailboxStatus.classList.add("is-turning-left");
+      demoMailboxArrow.textContent = "↺";
+      demoMailboxPhase.textContent = dictionary.mailboxTurnLeft;
+      rotateMailboxDial(-144, 900);
+    });
+    schedule(1200, () => {
+      demoMailboxCount.textContent = "1 / 2";
+      pulseMailboxAlignment();
+    });
+    schedule(1540, () => rotateMailboxDial(-504, 1320));
+    schedule(2920, () => {
+      demoMailboxCount.textContent = "2 / 2";
+      pulseMailboxAlignment();
+    });
+    schedule(3300, () => {
+      demoMailboxStatus.classList.remove("is-turning-left");
+      demoMailboxStatus.classList.add("is-turning-right");
+      demoMailboxArrow.textContent = "↻";
+      demoMailboxCount.textContent = "0 / 1";
+      demoMailboxPhase.textContent = dictionary.mailboxTurnRight;
+      rotateMailboxDial(-252, 1450);
+    });
+    schedule(4820, () => {
+      demoMailboxCount.textContent = "1 / 1";
+      pulseMailboxAlignment();
+      demoMailboxTarget.classList.add("is-unlocked");
+    });
+    schedule(5280, () => {
+      demoMailboxPhase.textContent = dictionary.mailboxUnlocked;
+      demoMailboxTarget.classList.add("is-open");
       entryDemoStage.classList.add("is-complete");
     });
     return;
@@ -628,11 +775,30 @@ function resetDemoVisuals() {
   roomRandomText.classList.remove("is-visible");
   roomDoorLeaf.classList.remove("is-open");
   roomHandle.classList.remove("is-down");
+  demoMailboxTarget.classList.remove("is-unlocked", "is-open");
+  demoMailboxStatus.classList.remove("is-turning-left", "is-turning-right", "is-aligned");
+  demoMailboxArrow.textContent = "↺";
+  demoMailboxCount.textContent = "0 / 2";
+  demoMailboxDial.style.transitionDuration = "0ms";
+  demoMailboxDial.style.transform = "rotate(0deg)";
+  void demoMailboxDial.offsetWidth;
+  demoMailboxDial.style.removeProperty("transition-duration");
   demoUnlockLights.forEach((light) => light.classList.remove("is-unlocked"));
   demoKeyElements.forEach((key) => key.classList.remove("is-tapped"));
   demoCodeDisplays.forEach((display) => {
     display.querySelectorAll("i").forEach((digit) => digit.classList.remove("is-visible"));
   });
+}
+
+function rotateMailboxDial(angle, duration) {
+  demoMailboxDial.style.transitionDuration = `${duration}ms`;
+  demoMailboxDial.style.transform = `rotate(${angle}deg)`;
+}
+
+function pulseMailboxAlignment() {
+  demoMailboxStatus.classList.remove("is-aligned");
+  void demoMailboxStatus.offsetWidth;
+  demoMailboxStatus.classList.add("is-aligned");
 }
 
 function tapDemoKey(keyId) {

@@ -104,7 +104,7 @@ window.JINDA_DATA = {
       guideImage: "/assets/properties/namba-south-room-1.jpg?v=20260708",
       videoPoster: "",
       videoSrc: "",
-      entryDemo: true,
+      entryDemoModes: ["lobby", "room"],
       otaLinks: {
         booking: "https://www.booking.com/searchresults.html?ss=Jinda%20Namba%20South%20Osaka",
         agoda: "https://www.agoda.com/search?text=Jinda%20Namba%20South%20Osaka",
@@ -160,6 +160,7 @@ window.JINDA_DATA = {
         "https://commons.wikimedia.org/wiki/Special:FilePath/022%20Osaka,%20Japan%20-%20city%20view%20of%20Osaka%20from%20Umeda%20Sky%20Building%20in%20Osaka,%20Japan.jpg",
       videoPoster:
         "https://www.goodfreephotos.com/albums/japan/osaka/osaka-castle-japan.jpg",
+      entryDemoModes: ["mailbox"],
       otaLinks: {
         booking: "https://www.booking.com/searchresults.html?ss=Jinda%20Eihonmachi%20Osaka",
         agoda: "https://www.agoda.com/search?text=Jinda%20Eihonmachi%20Osaka",

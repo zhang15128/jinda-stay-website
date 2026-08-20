@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>入住指南 | 仁达</title>
     <meta name="description" content="查看仁达各住宿物件的位置、入住步骤、房内介绍、周边设施与预订入口。" />
-    <link rel="stylesheet" href="./styles.css?v=20260803b" />
+    <link rel="stylesheet" href="./styles.css?v=20260821a" />
   </head>
   <body class="guide-site">
     <header class="site-header">
@@ -106,13 +106,14 @@
         <article class="guide-panel entry-demo-panel">
           <div class="entry-demo-header">
             <div class="guide-panel-head">
-              <p class="section-kicker" data-guide-i18n="entryDemoKicker">SMART ENTRY</p>
-              <h2 data-guide-i18n="entryDemoTitle">密碼門鎖操作示範</h2>
-              <span data-guide-i18n="entryDemoLead">使用示例密碼查看大樓入口與房門的操作方式。</span>
+              <p class="section-kicker" id="entryDemoKicker" data-guide-i18n="entryDemoKicker">SMART ENTRY</p>
+              <h2 id="entryDemoTitle" data-guide-i18n="entryDemoTitle">密碼門鎖操作示範</h2>
+              <span id="entryDemoLead" data-guide-i18n="entryDemoLead">使用示例密碼查看大樓入口與房門的操作方式。</span>
             </div>
             <div class="demo-mode-switch" id="demoModeSwitch" role="tablist" aria-label="Entry demo">
               <button id="demoLobbyTab" type="button" role="tab" aria-controls="demoLobbyScene" data-demo-mode="lobby" aria-selected="true" data-guide-i18n="demoLobby">大樓入口</button>
               <button id="demoRoomTab" type="button" role="tab" aria-controls="demoRoomScene" data-demo-mode="room" aria-selected="false" data-guide-i18n="demoRoom">房間門鎖</button>
+              <button id="demoMailboxTab" type="button" role="tab" aria-controls="demoMailboxScene" data-demo-mode="mailbox" aria-selected="false" data-guide-i18n="demoMailbox" hidden>信箱取鑰匙</button>
             </div>
           </div>
 
@@ -183,11 +184,53 @@
                   </div>
                 </div>
               </div>
+
+              <div class="demo-scene demo-mailbox-scene" id="demoMailboxScene" data-demo-scene="mailbox" role="tabpanel" aria-labelledby="demoMailboxTab" hidden>
+                <div class="mailbox-wall" aria-hidden="true">
+                  <span class="mailbox-scene-label">MAILBOX</span>
+                  <div class="mailbox-cabinet">
+                    <span class="mailbox-neighbor mailbox-neighbor-a"><i></i><b>306</b></span>
+                    <span class="mailbox-neighbor mailbox-neighbor-b"><i></i><b>307</b></span>
+                    <div class="mailbox-target" id="demoMailboxTarget">
+                      <div class="mailbox-cavity">
+                        <span class="mailbox-key-card"><i></i><b>KEY</b></span>
+                      </div>
+                      <div class="mailbox-door" id="demoMailboxDoor">
+                        <span class="mailbox-slot"></span>
+                        <span class="mailbox-number">308</span>
+                        <div class="mailbox-dial-shell">
+                          <span class="mailbox-index"></span>
+                          <div class="mailbox-dial" id="demoMailboxDial">
+                            <span class="mailbox-dial-number" style="--dial-index: 0">0</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 1">1</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 2">2</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 3">3</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 4">4</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 5">5</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 6">6</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 7">7</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 8">8</span>
+                            <span class="mailbox-dial-number" style="--dial-index: 9">9</span>
+                            <span class="mailbox-dial-center">DIAL</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="mailbox-neighbor mailbox-neighbor-c"><i></i><b>309</b></span>
+                    <span class="mailbox-neighbor mailbox-neighbor-d"><i></i><b>310</b></span>
+                  </div>
+                  <div class="mailbox-turn-status" id="demoMailboxStatus">
+                    <span class="mailbox-turn-arrow" id="demoMailboxArrow">↺</span>
+                    <span class="demo-phase-label" id="demoMailboxPhase">Turn left</span>
+                    <strong id="demoMailboxCount">0 / 2</strong>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="demo-instructions">
               <div class="demo-code-note">
-                <span data-guide-i18n="demoSampleLabel">示例密碼</span>
+                <span id="demoSampleLabel" data-guide-i18n="demoSampleLabel">示例密碼</span>
                 <button class="demo-replay" id="demoReplay" type="button">
                   <span aria-hidden="true">↻</span>
                   <span data-guide-i18n="demoReplay">重新播放</span>
@@ -196,7 +239,7 @@
               </div>
               <ol class="demo-step-list" id="demoStepList"></ol>
               <p class="demo-correction" id="demoCorrection" data-guide-i18n="demoCorrection" hidden>輸入錯誤時，按 C 刪除最後一位。</p>
-              <p class="demo-privacy" data-guide-i18n="demoPrivacy">真實密碼只會在入住前單獨提供。</p>
+              <p class="demo-privacy" id="demoPrivacyText" data-guide-i18n="demoPrivacy">真實密碼只會在入住前單獨提供。</p>
             </div>
           </div>
         </article>
@@ -235,7 +278,7 @@
       </div>
     </footer>
 
-    <script src="./hotel-data.js?v=20260803b"></script>
-    <script src="./guide.js?v=20260803b"></script>
+    <script src="./hotel-data.js?v=20260821a"></script>
+    <script src="./guide.js?v=20260821a"></script>
   </body>
 </html>
