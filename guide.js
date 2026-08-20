@@ -48,7 +48,7 @@ const guideTranslations = {
     mailboxDemoLead: "栄本町のダイヤル式郵便受けを、サンプル番号で開ける手順を確認できます。",
     demoMailbox: "郵便受け",
     mailboxSampleLabel: "サンプルの回し方",
-    mailboxSample: "左へ2回「4」→ 右へ1回「7」",
+    mailboxSample: "左へ回して「4」を2回、次に右へ回して「7」を1回",
     mailboxPrivacy: "実際の組み合わせ番号は宿泊前に個別でお知らせします。",
     mailboxTurnLeft: "左へ回し、「4」を2回合わせます",
     mailboxTurnRight: "右へ回し、「7」を1回合わせます",
@@ -109,7 +109,7 @@ const guideTranslations = {
     mailboxDemoLead: "See how to open the Eihonmachi dial mailbox and retrieve the key using a sample combination.",
     demoMailbox: "Mailbox key",
     mailboxSampleLabel: "Sample combination",
-    mailboxSample: "Left ×2 to 4 → Right ×1 to 7",
+    mailboxSample: "Turn left to 4 twice, then right to 7 once",
     mailboxPrivacy: "Your actual mailbox combination is shared privately before arrival.",
     mailboxTurnLeft: "Turn left and align 4 twice",
     mailboxTurnRight: "Turn right and align 7 once",
@@ -170,7 +170,7 @@ const guideTranslations = {
     mailboxDemoLead: "使用虛擬示例數字，查看榮本町旋鈕式信箱的開啟與取鑰匙方式。",
     demoMailbox: "信箱取鑰匙",
     mailboxSampleLabel: "示例轉法",
-    mailboxSample: "向左 ×2 至 4 → 向右 ×1 至 7",
+    mailboxSample: "向左轉到 4 兩次，再向右轉到 7 一次",
     mailboxPrivacy: "真實信箱組合數字只會在入住前單獨提供。",
     mailboxTurnLeft: "向左旋轉，對準 4 兩次",
     mailboxTurnRight: "向右旋轉，對準 7 一次",
@@ -231,7 +231,7 @@ const guideTranslations = {
     mailboxDemoLead: "使用虚拟示例数字，查看荣本町旋钮式信箱的开启与取钥匙方式。",
     demoMailbox: "信箱取钥匙",
     mailboxSampleLabel: "示例转法",
-    mailboxSample: "向左 ×2 至 4 → 向右 ×1 至 7",
+    mailboxSample: "向左转到 4 两次，再向右转到 7 一次",
     mailboxPrivacy: "真实信箱组合数字只会在入住前单独提供。",
     mailboxTurnLeft: "向左旋转，对准 4 两次",
     mailboxTurnRight: "向右旋转，对准 7 一次",
@@ -292,7 +292,7 @@ const guideTranslations = {
     mailboxDemoLead: "예시 번호를 사용해 에이혼마치 다이얼 우편함을 열고 열쇠를 꺼내는 방법을 확인하세요.",
     demoMailbox: "우편함 열쇠",
     mailboxSampleLabel: "예시 조합",
-    mailboxSample: "왼쪽 ×2, 4 → 오른쪽 ×1, 7",
+    mailboxSample: "왼쪽으로 돌려 4를 두 번, 다음 오른쪽으로 7을 한 번 맞춥니다",
     mailboxPrivacy: "실제 우편함 번호 조합은 체크인 전에 개별 안내됩니다.",
     mailboxTurnLeft: "왼쪽으로 돌려 4를 두 번 맞춥니다",
     mailboxTurnRight: "오른쪽으로 돌려 7을 한 번 맞춥니다",
@@ -353,7 +353,7 @@ const guideTranslations = {
     mailboxDemoLead: "Xem cách mở hộp thư núm xoay tại Eihonmachi và lấy chìa khóa bằng tổ hợp minh họa.",
     demoMailbox: "Chìa khóa hộp thư",
     mailboxSampleLabel: "Tổ hợp minh họa",
-    mailboxSample: "Trái ×2 đến 4 → Phải ×1 đến 7",
+    mailboxSample: "Xoay trái đến số 4 hai lần, sau đó xoay phải đến số 7 một lần",
     mailboxPrivacy: "Tổ hợp hộp thư thật chỉ được gửi riêng trước khi bạn đến.",
     mailboxTurnLeft: "Xoay sang trái, căn số 4 hai lần",
     mailboxTurnRight: "Xoay sang phải, căn số 7 một lần",
@@ -414,7 +414,7 @@ const guideTranslations = {
     mailboxDemoLead: "उदाहरण संयोजन से एइहोनमाची का डायल मेलबॉक्स खोलना और चाबी निकालना देखें।",
     demoMailbox: "मेलबॉक्स की चाबी",
     mailboxSampleLabel: "उदाहरण संयोजन",
-    mailboxSample: "बाएँ ×2 से 4 → दाएँ ×1 से 7",
+    mailboxSample: "बाएँ घुमाकर 4 को दो बार मिलाएँ, फिर दाएँ घुमाकर 7 को एक बार मिलाएँ",
     mailboxPrivacy: "मेलबॉक्स का वास्तविक संयोजन आने से पहले निजी रूप से भेजा जाएगा।",
     mailboxTurnLeft: "बाएँ घुमाएँ और 4 को दो बार मिलाएँ",
     mailboxTurnRight: "दाएँ घुमाएँ और 7 को एक बार मिलाएँ",
@@ -457,6 +457,8 @@ const demoStepList = document.querySelector("#demoStepList");
 const demoReplay = document.querySelector("#demoReplay");
 const demoSampleLabel = document.querySelector("#demoSampleLabel");
 const demoSampleCode = document.querySelector("#demoSampleCode");
+const demoMailboxSampleLabel = document.querySelector("#demoMailboxSampleLabel");
+const demoMailboxSample = document.querySelector("#demoMailboxSample");
 const demoCorrection = document.querySelector("#demoCorrection");
 const demoPrivacyText = document.querySelector("#demoPrivacyText");
 const demoLobbyPhase = document.querySelector("#demoLobbyPhase");
@@ -627,6 +629,8 @@ function renderEntryDemo(dictionary) {
   });
   demoSampleLabel.textContent = isMailboxDemo ? dictionary.mailboxSampleLabel : dictionary.demoSampleLabel;
   demoSampleCode.textContent = isMailboxDemo ? dictionary.mailboxSample : "1234";
+  demoMailboxSampleLabel.textContent = dictionary.mailboxSampleLabel;
+  demoMailboxSample.textContent = dictionary.mailboxSample;
   demoPrivacyText.textContent = isMailboxDemo ? dictionary.mailboxPrivacy : dictionary.demoPrivacy;
   demoCorrection.hidden = activeDemoMode !== "room";
   roomWakeBar.textContent = dictionary.demoRoomWakeBar;

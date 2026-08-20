@@ -1655,21 +1655,43 @@ html[lang="hi"] .service-list strong {
   content: "";
 }
 
-.mailbox-scene-label {
+.mailbox-sample-banner {
   position: absolute;
-  z-index: 3;
-  top: 18px;
+  z-index: 4;
+  top: 12px;
+  right: 6%;
   left: 6%;
-  color: #4d514e;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 10px;
+  display: grid;
+  min-height: 40px;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid rgba(63, 69, 64, 0.18);
+  border-radius: 8px;
+  background: rgba(248, 249, 246, 0.92);
+  box-shadow: 0 7px 20px rgba(41, 45, 42, 0.11);
+  color: #39413b;
+}
+
+.mailbox-sample-banner span {
+  color: #76512f;
+  font-size: 9px;
   font-weight: 800;
+  white-space: nowrap;
+}
+
+.mailbox-sample-banner strong {
+  min-width: 0;
+  font-size: 11px;
+  font-weight: 760;
+  line-height: 1.35;
 }
 
 .mailbox-cabinet {
   position: absolute;
   z-index: 2;
-  top: 44px;
+  top: 64px;
   right: 6%;
   bottom: 82px;
   left: 6%;
@@ -1973,13 +1995,13 @@ html[lang="hi"] .service-list strong {
 }
 
 .is-mailbox-demo .demo-code-note {
-  grid-template-columns: minmax(0, 1fr) auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.is-mailbox-demo .demo-code-note strong {
-  grid-column: 1 / -1;
-  font-size: 15px;
-  line-height: 1.5;
+.is-mailbox-demo #demoSampleLabel,
+.is-mailbox-demo #demoSampleCode {
+  display: none;
 }
 
 .demo-instructions {
@@ -2834,6 +2856,18 @@ html[lang="hi"] .service-list strong {
     width: min(62%, 230px);
   }
 
+  .mailbox-cabinet {
+    grid-template-columns: minmax(48px, 0.75fr) minmax(145px, 1.8fr) minmax(48px, 0.75fr);
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .mailbox-neighbor b {
+    right: 6px;
+    bottom: 7px;
+    font-size: 7px;
+  }
+
   .demo-instructions {
     padding: 22px 0 0;
     border-top: 1px solid var(--line);
@@ -2886,6 +2920,19 @@ html[lang="hi"] .service-list strong {
 
   .room-card h3 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .is-mailbox-demo .demo-visual-wrap {
+    min-height: 430px;
+  }
+
+  .mailbox-cabinet {
+    top: 94px;
+    right: 4%;
+    left: 4%;
+    grid-template-columns: minmax(38px, 0.7fr) minmax(122px, 2fr) minmax(38px, 0.7fr);
   }
 }
 
