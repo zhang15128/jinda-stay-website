@@ -28,7 +28,7 @@ const translations = {
     collection: "THE JINDA COLLECTION",
     introTitle: "大阪の街角に、小さな宿を連ねる。",
     introBody:
-      "日本橋、難波南、榮本町、hotel。仁达の宿は、それぞれの街の空気を残しながら、旅人が自分の部屋へ帰るように過ごせる場所を目指しています。",
+      "日本橋、難波南、榮本町、システムイン、hotel。仁达の宿は、それぞれの街の空気を残しながら、旅人が自分の部屋へ帰るように過ごせる場所を目指しています。",
     guideCta: "宿泊ガイドを見る",
     stayTitle: "STAY WITH JINDA",
     featuredTitle: "注目の宿",
@@ -80,7 +80,7 @@ const translations = {
     collection: "THE JINDA COLLECTION",
     introTitle: "Small stays, connected across Osaka.",
     introBody:
-      "Jinda connects Nihonbashi, Namba South, Eihonmachi, and hotel stays, keeping each neighborhood close while giving guests the ease of returning to their own room.",
+      "Jinda connects Nihonbashi, Namba South, Eihonmachi, System Inn, and Hotel stays, keeping each neighborhood close while giving guests the ease of returning to their own room.",
     guideCta: "View Stay Guide",
     stayTitle: "STAY WITH JINDA",
     featuredTitle: "Featured Residences",
@@ -131,7 +131,7 @@ const translations = {
     collection: "仁达住宿系列",
     introTitle: "在大阪街角，串起一間間小宿。",
     introBody:
-      "仁达日本桥、仁达难波南、仁达荣本町、仁达hotel，保留每個街區的氣味與節奏，讓旅人像回到自己的房間一樣自在停留。",
+      "仁达日本橋、仁达難波南、仁达榮本町、仁达系統院、仁达hotel，保留每個街區的氣味與節奏，讓旅人像回到自己的房間一樣自在停留。",
     guideCta: "查看入住指南",
     stayTitle: "入住仁达",
     featuredTitle: "精選住宿",
@@ -182,7 +182,7 @@ const translations = {
     collection: "仁达住宿系列",
     introTitle: "在大阪街角，串起一间间小宿。",
     introBody:
-      "仁达日本桥、仁达难波南、仁达荣本町、仁达hotel，保留每个街区的气味与节奏，让旅人像回到自己的房间一样自在停留。",
+      "仁达日本桥、仁达难波南、仁达荣本町、仁达系统院、仁达hotel，保留每个街区的气味与节奏，让旅人像回到自己的房间一样自在停留。",
     guideCta: "查看入住指南",
     stayTitle: "入住仁达",
     featuredTitle: "精选住宿",
@@ -234,7 +234,7 @@ const translations = {
     collection: "JINDA COLLECTION",
     introTitle: "오사카 골목마다 이어지는 작은 숙소.",
     introBody:
-      "니혼바시, 난바 남쪽, 에이혼마치, hotel까지. 仁达의 각 숙소는 동네의 분위기를 간직하면서도 편안한 체류를 제공합니다.",
+      "니혼바시, 난바 남쪽, 에이혼마치, 시스템 인, hotel까지. 仁达의 각 숙소는 동네의 분위기를 간직하면서도 편안한 체류를 제공합니다.",
     guideCta: "입주 가이드 보기",
     stayTitle: "STAY WITH JINDA",
     featuredTitle: "대표 숙소",
@@ -287,7 +287,7 @@ const translations = {
     collection: "BỘ SƯU TẬP JINDA",
     introTitle: "Những nơi lưu trú nhỏ, kết nối khắp Osaka.",
     introBody:
-      "Từ Nihonbashi, Namba South, Eihonmachi đến Jinda Hotel, mỗi nơi lưu trú giữ nét riêng của khu phố và mang lại cảm giác thoải mái như trở về căn phòng của mình.",
+      "Từ Nihonbashi, Namba South, Eihonmachi, System Inn đến Jinda Hotel, mỗi nơi lưu trú giữ nét riêng của khu phố và mang lại cảm giác thoải mái như trở về căn phòng của mình.",
     guideCta: "Xem hướng dẫn nhận phòng",
     stayTitle: "LƯU TRÚ CÙNG JINDA",
     featuredTitle: "Nơi lưu trú nổi bật",
@@ -340,7 +340,7 @@ const translations = {
     collection: "जिंदा कलेक्शन",
     introTitle: "ओसाका भर में जुड़े छोटे और निजी ठहराव।",
     introBody:
-      "निहोनबाशी, नाम्बा साउथ, एइहोनमाची और जिंदा होटल में हर ठहराव अपने इलाके की पहचान बनाए रखता है और अपने कमरे जैसा आराम देता है।",
+      "निहोनबाशी, नाम्बा साउथ, एइहोनमाची, सिस्टम इन और जिंदा होटल में हर ठहराव अपने इलाके की पहचान बनाए रखता है और अपने कमरे जैसा आराम देता है।",
     guideCta: "चेक-इन गाइड देखें",
     stayTitle: "जिंदा के साथ ठहरें",
     featuredTitle: "चुनिंदा ठहरने की जगहें",

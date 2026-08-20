@@ -17,6 +17,7 @@ const roomTranslations = {
     footerGuide: "宿泊ガイド",
     footerContact: "お問い合わせ",
     contactTitle: "お問い合わせ",
+    noRooms: "客室情報は準備中です。所在地と入室方法は宿泊ガイドでご確認いただけます。",
   },
   en: {
     back: "Back",
@@ -36,6 +37,7 @@ const roomTranslations = {
     footerGuide: "Stay Guide",
     footerContact: "Contact",
     contactTitle: "Contact us",
+    noRooms: "Room information is being prepared. You can still view the location and entry instructions in the stay guide.",
   },
   zhHant: {
     back: "返回",
@@ -55,6 +57,7 @@ const roomTranslations = {
     footerGuide: "入住指南",
     footerContact: "聯絡我們",
     contactTitle: "聯絡我們",
+    noRooms: "房型資訊仍在準備中，您可先在入住指南查看位置與入室方式。",
   },
   zhHans: {
     back: "返回",
@@ -74,6 +77,7 @@ const roomTranslations = {
     footerGuide: "入住指南",
     footerContact: "联系我们",
     contactTitle: "联系我们",
+    noRooms: "房型信息仍在准备中，您可先在入住指南查看位置与入室方式。",
   },
   ko: {
     back: "뒤로",
@@ -93,6 +97,7 @@ const roomTranslations = {
     footerGuide: "입주 가이드",
     footerContact: "문의",
     contactTitle: "문의",
+    noRooms: "객실 정보는 준비 중입니다. 숙박 가이드에서 위치와 입실 방법을 먼저 확인할 수 있습니다.",
   },
   vi: {
     back: "Quay lại",
@@ -112,6 +117,7 @@ const roomTranslations = {
     footerGuide: "Hướng dẫn nhận phòng",
     footerContact: "Liên hệ",
     contactTitle: "Liên hệ với chúng tôi",
+    noRooms: "Thông tin phòng đang được chuẩn bị. Bạn vẫn có thể xem vị trí và hướng dẫn vào phòng trong hướng dẫn lưu trú.",
   },
   hi: {
     back: "वापस",
@@ -131,6 +137,7 @@ const roomTranslations = {
     footerGuide: "चेक-इन गाइड",
     footerContact: "संपर्क",
     contactTitle: "हमसे संपर्क करें",
+    noRooms: "कमरे की जानकारी तैयार की जा रही है। ठहरने की गाइड में स्थान और प्रवेश निर्देश अभी देखे जा सकते हैं।",
   },
 };
 
@@ -211,6 +218,14 @@ function renderRoomPage(language) {
   checkoutSummary.textContent = `${dictionary.checkout}: ${checkout} ${dictionary.checkoutTime}`;
 
   roomGrid.innerHTML = "";
+  if (!currentProperty.rooms.length) {
+    const emptyState = document.createElement("p");
+    emptyState.className = "room-empty-state";
+    emptyState.textContent = dictionary.noRooms;
+    roomGrid.append(emptyState);
+    return;
+  }
+
   currentProperty.rooms.forEach((room) => {
     const article = document.createElement("article");
     article.className = "room-card";

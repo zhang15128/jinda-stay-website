@@ -657,6 +657,10 @@ html[lang="zh-CN"] .service-list strong {
   gap: 24px;
 }
 
+.property-entry-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .property-entry-card {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(250px, 0.92fr);
@@ -2276,6 +2280,17 @@ html[lang="hi"] .service-list strong {
   margin-top: 24px;
 }
 
+.guide-booking-notice {
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 .guide-ota-links a,
 .ota-actions a {
   min-height: 50px;
@@ -2473,6 +2488,17 @@ html[lang="hi"] .service-list strong {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-top: 34px;
+}
+
+.room-empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .room-card {

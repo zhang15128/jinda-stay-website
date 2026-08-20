@@ -15,6 +15,7 @@ const guideTranslations = {
     bookingKicker: "BOOKING",
     bookingTitle: "料金確認と予約",
     bookingText: "場所を確認してから、予約サイトで最新料金と空室を確認できます。",
+    bookingUnavailable: "この施設の予約情報は準備中です。所在地と入室方法は引き続きご確認いただけます。",
     reserveOn: "予約サイトへ",
     stepsTitle: "入室までの流れ",
     nearbyTitle: "周辺施設",
@@ -45,7 +46,7 @@ const guideTranslations = {
     roomDemoSteps: ["長いボタンを2回押し、表示されたランダムな文字をすべてタッチ", "入力欄がリセットされたらサンプル番号 1234 を入力", "Eで確定し、解錠音の後にハンドルを引く"],
     mailboxDemoKicker: "MAILBOX KEY",
     mailboxDemoTitle: "郵便受けから鍵を取り出すデモ",
-    mailboxDemoLead: "栄本町のダイヤル式郵便受けを、サンプル番号で開ける手順を確認できます。",
+    mailboxDemoLead: "{property}のダイヤル式郵便受けを、サンプル番号で開ける手順を確認できます。",
     demoMailbox: "郵便受け",
     mailboxSampleLabel: "サンプルの回し方",
     mailboxSample: "左へ回して「4」を2回、次に右へ回して「7」を1回",
@@ -76,6 +77,7 @@ const guideTranslations = {
     bookingKicker: "BOOKING",
     bookingTitle: "Check prices and book",
     bookingText: "After confirming the location, check live rates and availability on booking platforms.",
+    bookingUnavailable: "Booking information for this property is being prepared. You can still review its location and entry instructions.",
     reserveOn: "Reserve on",
     stepsTitle: "Check-in flow",
     nearbyTitle: "Nearby facilities",
@@ -106,7 +108,7 @@ const guideTranslations = {
     roomDemoSteps: ["Press the long button twice, then tap every random character", "When the field resets, enter sample code 1234", "Press E, wait for the unlock click, then pull the handle"],
     mailboxDemoKicker: "MAILBOX KEY",
     mailboxDemoTitle: "Mailbox key retrieval demo",
-    mailboxDemoLead: "See how to open the Eihonmachi dial mailbox and retrieve the key using a sample combination.",
+    mailboxDemoLead: "See how to open the dial mailbox at {property} and retrieve the key using a sample combination.",
     demoMailbox: "Mailbox key",
     mailboxSampleLabel: "Sample combination",
     mailboxSample: "Turn left to 4 twice, then right to 7 once",
@@ -137,6 +139,7 @@ const guideTranslations = {
     bookingKicker: "預訂",
     bookingTitle: "查看價格與預訂",
     bookingText: "確認位置後，前往預訂平台查看即時價格與空房。",
+    bookingUnavailable: "此物件的預訂資訊仍在準備中，您可先查看位置與入室方式。",
     reserveOn: "前往預訂",
     stepsTitle: "入住流程",
     nearbyTitle: "周邊設施",
@@ -167,7 +170,7 @@ const guideTranslations = {
     roomDemoSteps: ["按兩下長條形按鈕，再把隨機字元全部按完", "欄位復位後輸入示例密碼 1234", "按 E 確認，聽到解鎖聲後拉下把手"],
     mailboxDemoKicker: "信箱鑰匙",
     mailboxDemoTitle: "信箱取鑰匙操作示範",
-    mailboxDemoLead: "使用虛擬示例數字，查看榮本町旋鈕式信箱的開啟與取鑰匙方式。",
+    mailboxDemoLead: "使用虛擬示例數字，查看{property}旋鈕式信箱的開啟與取鑰匙方式。",
     demoMailbox: "信箱取鑰匙",
     mailboxSampleLabel: "示例轉法",
     mailboxSample: "向左轉到 4 兩次，再向右轉到 7 一次",
@@ -198,6 +201,7 @@ const guideTranslations = {
     bookingKicker: "预订",
     bookingTitle: "查看价格与预订",
     bookingText: "确认位置后，前往预订平台查看实时价格与空房。",
+    bookingUnavailable: "此物件的预订信息仍在准备中，您可先查看位置与入室方式。",
     reserveOn: "前往预订",
     stepsTitle: "入住流程",
     nearbyTitle: "周边设施",
@@ -228,7 +232,7 @@ const guideTranslations = {
     roomDemoSteps: ["按两下长条形按钮，再把随机字符全部按完", "栏位复位后输入示例密码 1234", "按 E 确认，听到解锁声后拉下把手"],
     mailboxDemoKicker: "信箱钥匙",
     mailboxDemoTitle: "信箱取钥匙操作演示",
-    mailboxDemoLead: "使用虚拟示例数字，查看荣本町旋钮式信箱的开启与取钥匙方式。",
+    mailboxDemoLead: "使用虚拟示例数字，查看{property}旋钮式信箱的开启与取钥匙方式。",
     demoMailbox: "信箱取钥匙",
     mailboxSampleLabel: "示例转法",
     mailboxSample: "向左转到 4 两次，再向右转到 7 一次",
@@ -259,6 +263,7 @@ const guideTranslations = {
     bookingKicker: "BOOKING",
     bookingTitle: "가격 확인 및 예약",
     bookingText: "위치를 확인한 뒤 예약 플랫폼에서 실시간 요금과 객실을 확인하세요.",
+    bookingUnavailable: "이 숙소의 예약 정보는 준비 중입니다. 위치와 입실 방법은 지금 확인할 수 있습니다.",
     reserveOn: "예약하기",
     stepsTitle: "체크인 절차",
     nearbyTitle: "주변 시설",
@@ -289,7 +294,7 @@ const guideTranslations = {
     roomDemoSteps: ["긴 버튼을 두 번 누른 뒤 표시된 무작위 문자를 모두 누르기", "입력란이 초기화되면 예시 비밀번호 1234 입력", "E를 눌러 확인하고 잠금 해제음 후 손잡이 내리기"],
     mailboxDemoKicker: "우편함 열쇠",
     mailboxDemoTitle: "우편함 열쇠 꺼내기 시연",
-    mailboxDemoLead: "예시 번호를 사용해 에이혼마치 다이얼 우편함을 열고 열쇠를 꺼내는 방법을 확인하세요.",
+    mailboxDemoLead: "예시 번호를 사용해 {property}의 다이얼 우편함을 열고 열쇠를 꺼내는 방법을 확인하세요.",
     demoMailbox: "우편함 열쇠",
     mailboxSampleLabel: "예시 조합",
     mailboxSample: "왼쪽으로 돌려 4를 두 번, 다음 오른쪽으로 7을 한 번 맞춥니다",
@@ -320,6 +325,7 @@ const guideTranslations = {
     bookingKicker: "ĐẶT PHÒNG",
     bookingTitle: "Xem giá và đặt phòng",
     bookingText: "Sau khi xác nhận vị trí, hãy xem giá và phòng trống mới nhất trên nền tảng đặt phòng.",
+    bookingUnavailable: "Thông tin đặt phòng cho cơ sở này đang được chuẩn bị. Bạn vẫn có thể xem vị trí và hướng dẫn vào phòng.",
     reserveOn: "Đặt qua",
     stepsTitle: "Quy trình nhận phòng",
     nearbyTitle: "Tiện ích lân cận",
@@ -350,7 +356,7 @@ const guideTranslations = {
     roomDemoSteps: ["Nhấn nút dài hai lần rồi chạm hết ký tự ngẫu nhiên", "Khi ô nhập được đặt lại, nhập mã minh họa 1234", "Nhấn E, chờ tiếng mở khóa rồi kéo tay nắm"],
     mailboxDemoKicker: "CHÌA KHÓA HỘP THƯ",
     mailboxDemoTitle: "Mô phỏng lấy chìa khóa từ hộp thư",
-    mailboxDemoLead: "Xem cách mở hộp thư núm xoay tại Eihonmachi và lấy chìa khóa bằng tổ hợp minh họa.",
+    mailboxDemoLead: "Xem cách mở hộp thư núm xoay tại {property} và lấy chìa khóa bằng tổ hợp minh họa.",
     demoMailbox: "Chìa khóa hộp thư",
     mailboxSampleLabel: "Tổ hợp minh họa",
     mailboxSample: "Xoay trái đến số 4 hai lần, sau đó xoay phải đến số 7 một lần",
@@ -381,6 +387,7 @@ const guideTranslations = {
     bookingKicker: "बुकिंग",
     bookingTitle: "कीमत देखें और बुक करें",
     bookingText: "स्थान की पुष्टि करने के बाद बुकिंग प्लेटफ़ॉर्म पर ताज़ा कीमत और उपलब्धता देखें।",
+    bookingUnavailable: "इस प्रॉपर्टी की बुकिंग जानकारी तैयार की जा रही है। स्थान और प्रवेश निर्देश अभी भी देखे जा सकते हैं।",
     reserveOn: "यहाँ बुक करें",
     stepsTitle: "चेक-इन प्रक्रिया",
     nearbyTitle: "आसपास की सुविधाएँ",
@@ -411,7 +418,7 @@ const guideTranslations = {
     roomDemoSteps: ["लंबे बटन को दो बार दबाएँ, फिर दिखने वाले सभी यादृच्छिक अक्षर दबाएँ", "फ़ील्ड रीसेट होने पर उदाहरण कोड 1234 डालें", "E दबाएँ, अनलॉक ध्वनि के बाद हैंडल खींचें"],
     mailboxDemoKicker: "मेलबॉक्स की चाबी",
     mailboxDemoTitle: "मेलबॉक्स से चाबी निकालने का डेमो",
-    mailboxDemoLead: "उदाहरण संयोजन से एइहोनमाची का डायल मेलबॉक्स खोलना और चाबी निकालना देखें।",
+    mailboxDemoLead: "उदाहरण संयोजन से {property} का डायल मेलबॉक्स खोलना और चाबी निकालना देखें।",
     demoMailbox: "मेलबॉक्स की चाबी",
     mailboxSampleLabel: "उदाहरण संयोजन",
     mailboxSample: "बाएँ घुमाकर 4 को दो बार मिलाएँ, फिर दाएँ घुमाकर 7 को एक बार मिलाएँ",
@@ -443,6 +450,7 @@ const guideVideo = document.querySelector("#guideVideo");
 const guideVideoCard = guideVideo.closest(".video-card");
 const guideImage = document.querySelector("#guideImage");
 const guideOtaLinks = document.querySelector("#guideOtaLinks");
+const guideBookingNotice = document.querySelector("#guideBookingNotice");
 const guideSteps = document.querySelector("#guideSteps");
 const nearbyList = document.querySelector("#nearbyList");
 const entryDemoSection = document.querySelector("#entryDemoSection");
@@ -577,7 +585,9 @@ function renderGuide(language) {
   }
   guideImage.src = activeProperty.guideImage;
   guideImage.alt = `${getPropertyName(activeProperty, language)} ${dictionary.imageLabel}`;
-  renderOtaLinks(dictionary, language);
+  const otaLinkCount = renderOtaLinks(dictionary, language);
+  guideBookingNotice.hidden = otaLinkCount > 0;
+  guideBookingNotice.textContent = dictionary.bookingUnavailable;
 
   guideSteps.innerHTML = "";
   steps.forEach((step) => {
@@ -614,7 +624,9 @@ function renderEntryDemo(dictionary) {
   entryDemoSection.classList.toggle("is-mailbox-demo", isMailboxDemo);
   entryDemoKickerNode.textContent = isMailboxDemo ? dictionary.mailboxDemoKicker : dictionary.entryDemoKicker;
   entryDemoTitleNode.textContent = isMailboxDemo ? dictionary.mailboxDemoTitle : dictionary.entryDemoTitle;
-  entryDemoLeadNode.textContent = isMailboxDemo ? dictionary.mailboxDemoLead : dictionary.entryDemoLead;
+  entryDemoLeadNode.textContent = isMailboxDemo
+    ? dictionary.mailboxDemoLead.replace("{property}", getPropertyName(activeProperty, languageSelect.value))
+    : dictionary.entryDemoLead;
   demoModeSwitch.hidden = availableModes.length < 2;
   demoModeSwitch.setAttribute("aria-label", isMailboxDemo ? dictionary.mailboxDemoTitle : dictionary.entryDemoTitle);
 
@@ -826,6 +838,7 @@ function revealDemoCode(codeType, digitCount) {
 
 function renderOtaLinks(dictionary, language) {
   guideOtaLinks.innerHTML = "";
+  let linkCount = 0;
   window.JINDA_DATA.otaPlatforms.forEach((platform) => {
     const href = activeProperty.otaLinks?.[platform.id];
     if (!href) {
@@ -838,7 +851,10 @@ function renderOtaLinks(dictionary, language) {
     link.rel = "noopener noreferrer";
     link.textContent = `${dictionary.reserveOn} ${getLocalizedName(platform, language)}`;
     guideOtaLinks.append(link);
+    linkCount += 1;
   });
+
+  return linkCount;
 }
 
 function buildOtaUrl(baseUrl, propertyId) {

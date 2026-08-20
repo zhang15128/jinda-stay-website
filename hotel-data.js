@@ -207,6 +207,44 @@ window.JINDA_DATA = {
       ],
     },
     {
+      id: "systemin",
+      name: "仁达系统院",
+      names: {
+        ja: "仁达システムイン",
+        en: "Jinda System Inn",
+        zhHant: "仁达系統院",
+        zhHans: "仁达系统院",
+        ko: "仁达 시스템 인",
+        vi: "仁达 System Inn",
+        hi: "仁达 सिस्टम इन",
+      },
+      area: "SYSTEM INN",
+      cardImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/OSAKA%20Tsutenkaku%20%2820190810%29.jpg?width=1600",
+      address: "大阪府大阪市浪速区戎本町2丁目6-23",
+      mapQuery: "〒556-0013 大阪府大阪市浪速区戎本町2丁目6-23",
+      mapShareUrl: "https://goo.gl/maps/gm54qQSiJe8JXvvn8",
+      mapCid: "5470171648789664508",
+      guideImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/OSAKA%20Tsutenkaku%20%2820190810%29.jpg?width=1600",
+      videoPoster: "",
+      videoSrc: "",
+      entryDemoModes: ["mailbox"],
+      otaLinks: {},
+      rooms: [],
+      facilities: [
+        { name: "Shin-Imamiya Station", names: { ja: "新今宮駅", en: "Shin-Imamiya Station", zhHant: "新今宮站", zhHans: "新今宫站", ko: "신이마미야역", vi: "Ga Shin-Imamiya", hi: "शिन-इमामिया स्टेशन" } },
+        { name: "Imamiyaebisu Station", names: { ja: "今宮戎駅", en: "Imamiyaebisu Station", zhHant: "今宮戎站", zhHans: "今宫戎站", ko: "이마미야에비스역", vi: "Ga Imamiyaebisu", hi: "इमामियाएबिसु स्टेशन" } },
+        { name: "Tsutenkaku", names: { ja: "通天閣", en: "Tsutenkaku", zhHant: "通天閣", zhHans: "通天阁", ko: "쓰텐카쿠", vi: "Tháp Tsutenkaku", hi: "त्सुतेनकाकु" } },
+        { name: "Convenience store", names: { ja: "コンビニ", en: "Convenience store", zhHant: "便利商店", zhHans: "便利店", ko: "편의점", vi: "Cửa hàng tiện lợi", hi: "कन्वीनियंस स्टोर" } },
+      ],
+      checkinSteps: [
+        "事前メールの部屋番号を確認",
+        "郵便受けのダイヤル番号で鍵を取り出す",
+        "室内ガイドで設備と退室時間を確認",
+      ],
+    },
+    {
       id: "hotel",
       name: "仁达hotel",
       names: {
