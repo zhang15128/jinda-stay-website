@@ -722,7 +722,7 @@ function playEntryDemo() {
       pulseMailboxAlignment();
     });
     schedule(3300, () => {
-      demoMailboxStatus.classList.remove("is-turning-left");
+      demoMailboxStatus.classList.remove("is-turning-left", "is-aligned");
       demoMailboxStatus.classList.add("is-turning-right");
       demoMailboxRotationGuide.classList.remove("is-turning-left");
       demoMailboxRotationGuide.classList.add("is-turning-right");
