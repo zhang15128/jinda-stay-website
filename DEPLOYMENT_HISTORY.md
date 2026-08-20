@@ -62,6 +62,21 @@
 - 安全边界：用户提供的原始参考视频与真实信箱组合数字均未进入发布包或 Git。
 - 验证结果：部署列表显示来源提交为 `c36c6a7`，环境为 `Production / main`；生产指南页、`styles.css?v=20260821a` 和 `guide.js?v=20260821a` 均返回 HTTP 200；公网 390px 手机视口下动画可完成开门状态，无脚本错误或横向溢出。
 
+## 2026-08-21 | Cloudflare 荣本町信箱提示优化部署
+
+- 发布平台：Cloudflare Pages
+- 项目：`jinda-stay-demo`
+- 部署环境：Production / `main`
+- Cloudflare 部署 ID：`cda5a353-de50-40ec-b6be-f676630f3a78`
+- 部署预览地址：<https://cda5a353.jinda-stay-demo.pages.dev>
+- 生产访问地址：<https://jinda-stay-demo.pages.dev/guide.html?property=eihonmachi&lang=zhHans&release=20260821b>
+- 发布包：`cloudflare-dist-safe-20260821b`
+- 本次资源版本：`v=20260821b`
+- 对应 Git 提交：`6e04e40`（调整荣本町信箱操作提示）
+- 发布内容：将示例转法改写为自然句子并移至信箱动画顶部；下方保留重新播放和详细步骤；同步七种语言及窄屏布局。
+- 安全边界：发布包未包含用户提供的原始参考视频、真实信箱组合数字或未跟踪的媒体制作目录。
+- 验证结果：Cloudflare 部署列表显示来源提交为 `6e04e40`，环境为 `Production / main`；生产指南页、`styles.css?v=20260821b` 和 `guide.js?v=20260821b` 均返回 HTTP 200；公网 390px 手机视口无脚本错误、文字遮挡或横向溢出。
+
 ### 记录边界
 
 - `index.html` 直接访问时由当前站点重定向到 `/`，这是本次观测到的 Cloudflare 路由行为。
