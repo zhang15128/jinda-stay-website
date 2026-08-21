@@ -722,18 +722,18 @@ function playEntryDemo() {
       demoMailboxRotationGuide.classList.add("is-turning-left");
       demoMailboxArrow.textContent = "↺";
       demoMailboxPhase.textContent = dictionary.mailboxTurnLeft;
-      rotateMailboxDial(-144, 900);
+      rotateMailboxDial(-144, 1250);
     });
-    schedule(1200, () => {
+    schedule(1560, () => {
       demoMailboxCount.textContent = "1 / 2";
       pulseMailboxAlignment();
     });
-    schedule(1540, () => rotateMailboxDial(-504, 1320));
-    schedule(2920, () => {
+    schedule(1940, () => rotateMailboxDial(-504, 1800));
+    schedule(3800, () => {
       demoMailboxCount.textContent = "2 / 2";
       pulseMailboxAlignment();
     });
-    schedule(3300, () => {
+    schedule(4200, () => {
       demoMailboxStatus.classList.remove("is-turning-left", "is-aligned");
       demoMailboxStatus.classList.add("is-turning-right");
       demoMailboxRotationGuide.classList.remove("is-turning-left");
@@ -741,16 +741,16 @@ function playEntryDemo() {
       demoMailboxArrow.textContent = "↻";
       demoMailboxCount.textContent = "0 / 1";
       demoMailboxPhase.textContent = dictionary.mailboxTurnRight;
-      rotateMailboxDial(-252, 1450);
+      rotateMailboxDial(-252, 1900);
     });
-    schedule(4820, () => {
+    schedule(6160, () => {
       demoMailboxCount.textContent = "1 / 1";
       pulseMailboxAlignment();
       demoMailboxRotationGuide.classList.remove("is-turning-right");
       demoMailboxRotationGuide.classList.add("is-complete");
       demoMailboxTarget.classList.add("is-unlocked");
     });
-    schedule(5280, () => {
+    schedule(6650, () => {
       demoMailboxPhase.textContent = dictionary.mailboxUnlocked;
       demoMailboxTarget.classList.add("is-open");
       entryDemoStage.classList.add("is-complete");
