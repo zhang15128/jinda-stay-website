@@ -123,6 +123,21 @@
 - 安全边界：发布包未包含真实门禁密码、用户提供的原始参考视频、客户资料或未跟踪的媒体制作目录。
 - 验证结果：部署列表显示来源提交为 `079540b`，环境为 `Production / main`；生产首页、指南页和 `hotel-data.js?v=20260821e` 返回 HTTP 200；公网 390px 手机视口显示五个物件、固定地图和系统院信箱演示，无脚本错误或横向溢出。
 
+## 2026-08-22 | Cloudflare 信箱转轮减速部署
+
+- 发布平台：Cloudflare Pages
+- 项目：`jinda-stay-demo`
+- 部署环境：Production / `main`
+- Cloudflare 部署 ID：`b7115df9-5aa3-4730-9707-b8baf0c9f1d1`
+- 部署预览地址：<https://b7115df9.jinda-stay-demo.pages.dev>
+- 生产访问地址：<https://jinda-stay-demo.pages.dev/guide.html?property=systemin&lang=zhHans&release=20260822a>
+- 发布包：`cloudflare-dist-safe-20260822a`
+- 本次资源版本：`v=20260822a`
+- 对应 Git 提交：`489cb19`（放慢信箱数字转轮动画）
+- 发布内容：将信箱演示的两段左转和一段右转统一放慢，并延长数字对准与方向切换之间的停顿。
+- 安全边界：发布包未包含真实门禁密码、用户提供的原始参考视频、客户资料或未跟踪的媒体制作目录。
+- 验证结果：部署列表显示来源提交为 `489cb19`，环境为 `Production / main`；生产指南页和 `guide.js?v=20260822a` 返回 HTTP 200；公网 390px 手机视口下荣本町与系统院均依次使用 `1250ms`、`1800ms`、`1900ms` 的转轮时长并正常完成开箱，无脚本错误或横向溢出。
+
 ### 记录边界
 
 - `index.html` 直接访问时由当前站点重定向到 `/`，这是本次观测到的 Cloudflare 路由行为。
